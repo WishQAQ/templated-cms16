@@ -1,0 +1,63 @@
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="{dede:global.cfg_templets_skin/}/css/bootstrap.min.css" rel="stylesheet">
+<link href="{dede:global.cfg_templets_skin/}/css/layout.css" rel="stylesheet">
+<link href="{dede:global.cfg_templets_skin/}/css/style.css" rel="stylesheet">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/bootstrap.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/wb.js" type="text/javascript" charset="utf-8"></script>
+<!--[if lt IE 9]>
+      <script src="{dede:global.cfg_templets_skin/}/js/html5shiv.min.js"></script>
+      <script src="{dede:global.cfg_templets_skin/}/js/respond.min.js"></script>
+    <![endif]-->
+<!--[if lt IE 10]>
+    
+    <![endif]-->
+</head>
+<body>
+<header> 
+  <!--nav-->
+  <nav class="navbar navbar-default navbar-fixed-top"> {dede:include filename="head.htm"/} 
+    <!-- /.container-fluid --> 
+  </nav>
+  <!--End nav--> 
+</header>
+<section class="ban"> <img src="{dede:global.cfg_templets_skin/}/images/news.jpg"> </section>
+<section class="about-nav project"> {dede:channel type='son' noself='yes'} <a href="[field:typelink/]">[field:typename/]</a> {/dede:channel} </section>
+<section class="about-us case-show">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 about-top">
+        <h1 class="text-uppercase"><strong> {dede:field.typenameen /} </strong></h1>
+        <h3><strong> {dede:field name='typename'/} </strong></h3>
+      </div>
+    </div>
+  </div>
+  <div class="case-show-anl news-ent text-left">
+    <div class="container"> {dede:list  pagesize='12' typeid='' titlelen='40'}
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 undefined">
+        <div class="item" title="  [field:title/]"> <a href="[field:arcurl/]"> <img src="[field:litpic/]">
+          <li>[field:pubdate function="MyDate('m-d',@me)"/]<span>[field:pubdate function="MyDate('Y',@me)"/]</span></li>
+          <h4> [field:title/]</h4>
+          <p> [field:description function="cn_substr(@me,120)"/]......</p>
+          </a> </div>
+      </div>
+      {/dede:list} </div>
+  </div>
+  <div class="pagess">
+<ul>
+ {dede:pagelist listitem="index,end,pre,next,pageno" listsize="5"/}
+</ul>
+</div>
+</section>
+<script src="{dede:global.cfg_templets_skin/}/js/mp.mansory.js"></script> 
+{dede:include filename="foot.htm"/}
+</body>
+</html>

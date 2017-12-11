@@ -1,0 +1,300 @@
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>联系我们_我的网站</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="/templets/default/css/bootstrap.min.css" rel="stylesheet">
+<link href="/templets/default/css/layout.css" rel="stylesheet">
+<link href="/templets/default/css/style.css" rel="stylesheet">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="/templets/default/js/jquery.min.js"></script>
+<script src="/templets/default/js/bootstrap.min.js"></script>
+<script src="/templets/default/js/wb.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+<!--[if lt IE 9]>
+      <script src="/templets/default/js/html5shiv.min.js"></script>
+      <script src="/templets/default/js/respond.min.js"></script>
+    <![endif]-->
+<!--[if lt IE 10]>
+     
+    <![endif]-->
+<script>
+	$(document).ready(function() {
+        $('.btn').click(function(){
+			if($('#xingming').val()==''){alert('请输入姓名！');return false;}
+			if($('#dh').val()==''){alert('请输入电话！');return false;}
+			if($('#youxiang').val()==''){alert('请输入邮箱！');return false;}
+			if($('#lynr').val()==''){alert('请输入留言内容！');return false;}
+		})
+    });
+</script>    	
+</head>
+<body>
+<header> 
+  <!--nav-->
+  <nav class="navbar navbar-default navbar-fixed-top"> <div class="container">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+      data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only"> Toggle navigation </span> <span class="icon-bar"> </span> <span class="icon-bar"> </span> <span class="icon-bar"> </span> </button>
+    <a class="navbar-brand visible-lg visible-sm visible-md" href="http://localhost:9090"> <img alt="" src="/templets/default/images/logo.png"> </a> <a class="navbar-brand visible-xs" href="/"> <img alt="" src="/templets/default/images/logo.png"> </a> </div>
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav navbar-right">
+      <li > <a href="/"> 网站首页 </a> </li>
+      <li class=''> <a href="/a/gy/jj/"> 关于我们 </a> </li><li class=''> <a href="/a/news/"> 新闻资讯 </a> </li><li class=''> <a href="/a/gcfw/"> 工程服务 </a> </li><li class=''> <a href="/a/anli/"> 成功案例 </a> </li><li class=''> <a href="/a/jszc/"> 技术支持 </a> </li><li class=''> <a href="/a/lx/"> 联系我们 </a> </li>
+    </ul>
+  </div>
+  <!-- /.navbar-collapse --> 
+</div>
+ 
+    <!-- /.container-fluid --> 
+  </nav>
+  <!--End nav--> 
+</header>
+<section class="ban"> <img src="/templets/default/images/about.png"> </section>
+<section class="about-nav">
+  <div class="container">
+    <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-12">
+      <ul class="row">
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="about-us connect-us">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 about-top">
+        <h1 class="text-uppercase"><strong>CONNECT US</strong></h1>
+        <h3><strong>联系我们</strong></h3>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-4">
+          <div class="foot-div foot-div1"> 
+          <p>全国服务热线</p>
+            <h2>400-8888-888</h2>
+            <div class="foot-div foot-div2">
+                <h4> 南京市某某科技有限公司 </h4>
+              <p>电话：4008-888-888 </p>
+              <p>手机：13680000000 </p>
+              <p>传真：0750-88888888 </p>
+              <p>邮箱：123456@qq.com </p>
+              <p>地址：江苏省南京市玄武区玄武湖 </p>
+              </div>
+           </div>
+        </div>
+      </div>
+    </div>
+    
+    <div> <div style="width:50%;height:500px;" id="dituContent"></div></div>
+  </div>
+</section>
+<section class="connect-form">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <li>认真聆听您的需求和建议</li>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="row">
+<form action="/plus/diy.php" enctype="multipart/form-data" method="post">
+<input type="hidden" name="action" value="post" />
+<input type="hidden" name="diyid" value="1" />
+<input type="hidden" name="do" value="2" />
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+  <div class="form-group">
+    <input type="text" class="form-control" name='xingming' id='xingming' placeholder="姓名">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" name='dh' id='dh' placeholder="电话">
+  </div>
+  <div class="form-group">
+    <input type="email" class="form-control" name='youxiang' id='youxiang' placeholder="邮箱">
+  </div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-left">
+  <p>留言</p>
+  <textarea class="form-control" rows="5" name='lynr' id='lynr'></textarea>
+</div>
+</div>
+<input type="hidden" name="dede_fields" value="xingming,text;youxiang,text;lynr,multitext;dh,text" />
+<input type="hidden" name="dede_fieldshash" value="c31e6381cb8a8b167788a234ed837f53" />
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-right">
+  <button type="submit" name="submit" class="btn" >提交留言</button>
+</div>
+</div>
+</div>
+</section>
+<footer class="about-foot">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 about-foot-div1">
+            <div clas="row">
+              <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 text-left">
+                <h4>南京市某某科技有限公司</h4>
+                <p>电话：4008-888-888 </p>
+              <p>手机：13680000000 </p>
+              <p>传真：0750-88888888 </p>
+              <p>邮箱：123456@qq.com </p>
+              <p>地址：江苏省南京市玄武区玄武湖 </p>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-right">
+                <p>全国服务热线</p>
+                <h2>4008-888-888</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 about-foot-div2">
+            <div clas="row">
+              <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 text-left">
+                <p>Copyright © 2011-2016 织梦科技 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a></p>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-right">
+               
+                <script src="/templets/default/js/loader.js" widget="shareqq" charset="utf-8"></script><script widget="shareqq" charset="utf-8" src="/templets/default/js/shareqq.js?t=20121127"></script>
+                <a title="微信" class="ewm-a"><img src="/templets/default/images/wx.png"><div class="ewm ewm-2"><img src="/templets/default/images/ewm.png"><p>扫一扫分享二维码</p></div></a>
+                <a href="http://weibo.com/" target="_blank" title="微博"><img src="/templets/default/images/wb.png"></a>
+                
+         
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script> 
+      $(document).ready(function(){
+        $("#flip").click(function(){
+          $(".footer-container").slideToggle("slow");
+        });
+        
+        //提交留言信息
+        $("#publish").click(function(){
+            var name = $("input[name='name']").val();
+            var phone = $("input[name='phone']").val();
+            if (phone == '') {
+                alert('请输入联系方式');
+                return false;
+            }
+            var Email = $("input[name='Email']").val();
+            var content = $("textarea[name='content']").val();
+            if (content == '') {
+                alert('请输入留言内容');
+                return false;
+            }
+            $.post("http://www.china-szlf.cn/bgMessage/storeMessage", {
+                "name": name,
+                "phone": phone,
+                "Email": Email,
+                "content": content,
+            }, function(data){
+                if (data == "1") {
+                    alert('提交成功');
+                    window.location.reload();
+                }
+            });
+        });
+        
+      });
+      </script>
+</body>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+    
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(118.800879,32.083705);//定义一个中心点坐标
+        map.centerAndZoom(point,14);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+    
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+    
+    //地图控件添加函数：
+    function addMapControl(){
+                        }
+    
+    //标注点数组
+    var markerArr = [{title:"南京市某某科技有限公司",content:"江苏省南京市玄武区玄武湖",point:"118.800879|32.083705",isOpen:1,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+		 ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+			var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+			var iw = createInfoWindow(i);
+			var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+			marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                        borderColor:"#808080",
+                        color:"#333",
+                        cursor:"pointer"
+            });
+			
+			(function(){
+				var index = i;
+				var _iw = createInfoWindow(i);
+				var _marker = marker;
+				_marker.addEventListener("click",function(){
+				    this.openInfoWindow(_iw);
+			    });
+			    _iw.addEventListener("open",function(){
+				    _marker.getLabel().hide();
+			    })
+			    _iw.addEventListener("close",function(){
+				    _marker.getLabel().show();
+			    })
+				label.addEventListener("click",function(){
+				    _marker.openInfoWindow(_iw);
+			    })
+				if(!!json.isOpen){
+					label.hide();
+					_marker.openInfoWindow(_iw);
+				}
+			})()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+    
+    initMap();//创建和初始化地图
+</script>
+</html>

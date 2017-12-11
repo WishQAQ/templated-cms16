@@ -1,0 +1,1 @@
+<li class='{dede:field.currentstyle/}'> <a href="{dede:field name='typeurl'/}"> {dede:field name='typename'/} </a> </li>

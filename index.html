@@ -1,0 +1,417 @@
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="wb:webmaster" content="7106966487d5098e">
+<title>我的网站</title>
+<meta name="description" content="网站描述" />
+<meta name="keywords" content="关键词" />
+<link href="/templets/default/css/bootstrap.min.css" rel="stylesheet">
+<link href="/templets/default/css/layout.css" rel="stylesheet">
+<link href="/templets/default/css/style.css" rel="stylesheet">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="/templets/default/js/jquery.min.js">
+  </script>
+<script src="/templets/default/js/bootstrap.min.js">
+  </script>
+<script src="/templets/default/js/wb.js" type="text/javascript" charset="utf-8">
+  </script>
+  <script>
+	$(document).ready(function() {
+        $('#ban div').first().addClass('active');
+		$('#tijiao').click(function(){
+			if($('#xingming').val()==''){alert('请输入姓名！');return false;}
+			if($('#dh').val()==''){alert('请输入电话！');return false;}
+			if($('#lynr').val()==''){alert('请输入留言内容！');return false;}
+		})
+    });
+</script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+<!--[if lt IE 9]>
+   <script src="/templets/default/js/html5shiv.min.js">
+   </script>
+   <script src="/templets/default/js/respond.min.js">
+   </script>
+  <![endif]-->
+<!--[if lt IE 10]>
+  
+  <![endif]-->
+
+</head>
+<body>
+<header> 
+  <!--nav-->
+  <nav class="navbar navbar-default navbar-fixed-top"> <div class="container">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+      data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only"> Toggle navigation </span> <span class="icon-bar"> </span> <span class="icon-bar"> </span> <span class="icon-bar"> </span> </button>
+    <a class="navbar-brand visible-lg visible-sm visible-md" href="http://localhost:9090"> <img alt="" src="/templets/default/images/logo.png"> </a> <a class="navbar-brand visible-xs" href="/"> <img alt="" src="/templets/default/images/logo.png"> </a> </div>
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav navbar-right">
+      <li  class='active' > <a href="/"> 网站首页 </a> </li>
+      <li class=''> <a href="/a/gy/jj/"> 关于我们 </a> </li><li class=''> <a href="/a/news/"> 新闻资讯 </a> </li><li class=''> <a href="/a/gcfw/"> 工程服务 </a> </li><li class=''> <a href="/a/anli/"> 成功案例 </a> </li><li class=''> <a href="/a/jszc/"> 技术支持 </a> </li><li class=''> <a href="/a/lx/"> 联系我们 </a> </li>
+    </ul>
+  </div>
+  <!-- /.navbar-collapse --> 
+</div>
+ 
+    <!-- /.container-fluid --> 
+  </nav>
+  <!--End nav--> 
+</header>
+<link href="/templets/default/css/index.css" rel="stylesheet">
+<section class="ban">
+  <div id="carousel-example-generic" class="carousel slide carousel-top"
+   data-ride="carousel"> 
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"> </li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"> </li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"> </li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox" id="ban">
+      <div class="item "> <img src="/uploads/allimg/160920/1-1609201326020-L.jpg" alt=""> </div>
+<div class="item "> <img src="/uploads/allimg/160920/1-1609201325520-L.jpg" alt=""> </div>
+<div class="item "> <img src="/uploads/160920/1-160920132536105.jpg" alt=""> </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="engin">
+  <div class="container-1500">
+    <div class="row"> <a href="/a/gcfw/ylgc/2016/0830/10.html">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+        <div class="engin-frame"> <img src="/uploads/allimg/160920/1-160920145255549-lp.jpg">
+          <div class="engin-text"> 洁净手术部 </div>
+        </div>
+        <div class="engin-xq">
+          <li> 09-20 <span> 2016 </span> </li>
+          <h4> 洁净手术部 </h4>
+          <p> 由洁净手术室、洁净辅助用房和非洁净辅助用房等一部分或全部组成的独立的功 </p>
+        </div>
+      </div>
+      </a>
+<a href="/a/gcfw/ylgc/2016/0830/11.html">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+        <div class="engin-frame"> <img src="/uploads/allimg/160920/1-160920145101a2-lp.jpg">
+          <div class="engin-text"> 重症监护病房（ICU） </div>
+        </div>
+        <div class="engin-xq">
+          <li> 09-20 <span> 2016 </span> </li>
+          <h4> 重症监护病房（ICU） </h4>
+          <p> 重症医学科位于方便患者转运、检查和治疗的区域，并宜接近手术室、医学影像 </p>
+        </div>
+      </div>
+      </a>
+<a href="/a/gcfw/ylgc/2016/0830/13.html">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+        <div class="engin-frame"> <img src="/uploads/allimg/160920/1-16092014501K44-lp.jpg">
+          <div class="engin-text"> 洁净实验室 </div>
+        </div>
+        <div class="engin-xq">
+          <li> 09-20 <span> 2016 </span> </li>
+          <h4> 洁净实验室 </h4>
+          <p> 洁净实验室分为普通洁净实验室与生物安全实验室 </p>
+        </div>
+      </div>
+      </a>
+<a href="/a/gcfw/ylgc/2016/0830/12.html">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+        <div class="engin-frame"> <img src="/uploads/allimg/160920/1-160920144Z5Q3-lp.jpg">
+          <div class="engin-text"> 生物安全实验室 </div>
+        </div>
+        <div class="engin-xq">
+          <li> 09-20 <span> 2016 </span> </li>
+          <h4> 生物安全实验室 </h4>
+          <p> 生物安全实验室一般由主实验室、其他实验室和辅助用房组成 生物安全实验室 </p>
+        </div>
+      </div>
+      </a>
+
+      <div class="clearfix visible-xs-block"> </div>
+      <div class="clearfix visible-lg-block visible-md-block visible-sm-block"> </div>
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> <a href="/a/gcfw/"> 了解更多+ </a> </div>
+    </div>
+  </div>
+</section>
+<section class="client">
+  <div class="container">
+    <div class="col-lg-12"> 服务过哪些客户很重要，用心更重要! </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4"> 
+        <a> 
+        <img src="/templets/default/images/kh1.png" class="disblock"> 
+        <img src="/templets/default/images/kh1.png" class="disnone"> 
+        </a> 
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+        <a> 
+        <img src="/templets/default/images/kh2.png" class="disblock"> 
+        <img src="/templets/default/images/kh2.png" class="disnone"> 
+        </a> 
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+        <a> 
+        <img src="/templets/default/images/kh3.png" class="disblock"> 
+        <img src="/templets/default/images/kh3.png" class="disnone"> 
+        </a> 
+    </div>
+    <div class="clearfix visible-xs-block"> </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+        <a> 
+        <img src="/templets/default/images/kh4.png" class="disblock"> 
+        <img src="/templets/default/images/kh4.png" class="disnone"> 
+        </a> 
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+        <a> 
+        <img src="/templets/default/images/kh5.png" class="disblock"> 
+        <img src="/templets/default/images/kh5.png" class="disnone"> 
+        </a> 
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+        <a> 
+        <img src="/templets/default/images/kh6.png" class="disblock"> 
+        <img src="/templets/default/images/kh6.png" class="disnone"> 
+        </a> 
+    </div>
+    <div class="clearfix visible-xs-block"> </div>
+    <div class="clearfix visible-lg-block visible-md-block visible-sm-block"> </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+        <a> 
+        <img src="/templets/default/images/kh7.png" class="disblock"> 
+        <img src="/templets/default/images/kh7.png" class="disnone"> 
+        </a> 
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+        <a> 
+        <img src="/templets/default/images/kh8.png" class="disblock"> 
+        <img src="/templets/default/images/kh8.png" class="disnone"> 
+        </a> 
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+        <a> 
+        <img src="/templets/default/images/kh9.png" class="disblock"> 
+        <img src="/templets/default/images/kh9.png" class="disnone"> 
+        </a> 
+    </div>
+    <div class="clearfix visible-xs-block"> </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+        <a> 
+        <img src="/templets/default/images/kh10.png" class="disblock"> 
+        <img src="/templets/default/images/kh10.png" class="disnone"> 
+        </a> 
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+        <a> 
+        <img src="/templets/default/images/kh11.png" class="disblock"> 
+        <img src="/templets/default/images/kh11.png" class="disnone"> 
+        </a> 
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+        <a> 
+        <img src="/templets/default/images/kh12.png" class="disblock"> 
+        <img src="/templets/default/images/kh12.png" class="disnone"> 
+        </a> 
+    </div>
+    <div class="clearfix visible-xs-block"> </div>
+    <div class="clearfix visible-lg-block visible-md-block visible-sm-block"> </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+        <a> 
+        <img src="/templets/default/images/kh13.png" class="disblock"> 
+        <img src="/templets/default/images/kh13.png" class="disnone"> 
+        </a> 
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+        <a> 
+        <img src="/templets/default/images/kh14.png" class="disblock"> 
+        <img src="/templets/default/images/kh14.png" class="disnone"> 
+        </a> 
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+        <a> 
+        <img src="/templets/default/images/kh15.png" class="disblock"> 
+        <img src="/templets/default/images/kh15.png" class="disnone"> 
+        </a> 
+    </div>
+    <div class="clearfix visible-xs-block"> </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+        <a> 
+        <img src="/templets/default/images/kh16.png" class="disblock"> 
+        <img src="/templets/default/images/kh16.png" class="disnone"> 
+        </a> 
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+        <a> 
+        <img src="/templets/default/images/kh17.png" class="disblock"> 
+        <img src="/templets/default/images/kh17.png" class="disnone"> 
+        </a> 
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+        <a> 
+        <img src="/templets/default/images/kh18.png" class="disblock"> 
+        <img src="/templets/default/images/kh18.png" class="disnone"> 
+        </a> 
+    </div>
+    <div class="clearfix visible-xs-block"> </div>
+    <div class="clearfix visible-lg-block visible-md-block visible-sm-block"> </div>
+  </div>
+</section>
+<footer class="footer text-center">
+  <div class="footer-map"> 
+  <div style="width:100%;height:500px;" id="dituContent"></div>
+  
+    <div class="footer-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left">
+            <div class="foot-div foot-div1">
+              <p> 全国服务热线 </p>
+              <h2>  </h2>
+            </div>
+            <div class="foot-div foot-div2">
+              <h4> 南京市某某科技有限公司 </h4>
+              <p>电话：4008-888-888 </p>
+              <p>手机：13680000000 </p>
+              <p>传真：0750-88888888 </p>
+              <p>邮箱：123456@qq.com </p>
+              <p>地址：江苏省南京市玄武区玄武湖 </p>
+            </div>
+            <div class="foot-div foot-div3"> 
+              <script src="/templets/default/js/loader.js" widget="shareqq" charset="utf-8">
+        </script> 
+              <script widget="shareqq" charset="utf-8" src="/templets/default/js/shareqq.js?t=20121127">
+        </script> 
+              <a title="微信" class="ewm-a"> <img src="/templets/default/images/wx.png">
+              <div class="ewm"> <img src="/templets/default/images/ewm.png"> </div>
+              </a> <a href="http://weibo.com/" target="_blank" title="微博"> <img src="/templets/default/images/wb.png"> </a>
+              <p>
+              <p>Copyright © 2011-2016 织梦科技 <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a> </p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left">
+            <div>
+              <h4> 认真聆听您的需求和建议是我们最重要的工作之一 </h4>
+              <form action="/plus/diy.php" enctype="multipart/form-data" method="post">
+                <input type="hidden" name="action" value="post" />
+                <input type="hidden" name="diyid" value="1" />
+                <input type="hidden" name="do" value="2" />
+                <li>
+                  <input type="text" class="form-control" name='xingming' id='xingming'placeholder="姓名">
+                </li>
+                <li>
+                  <input type="text" class="form-control" name='dh' id='dh' placeholder="电话">
+                </li>
+                <li>
+                  <textarea class="form-control" rows="3" name='lynr' id='lynr' placeholder="留言"></textarea>
+                </li>
+                <input type="hidden" name="dede_fields" value="xingming,text;youxiang,text;lynr,multitext;dh,text" />
+                <input type="hidden" name="dede_fieldshash" value="c31e6381cb8a8b167788a234ed837f53" />
+                <li class="foot-li"> <span style="text-align: center"></span>
+                  <input type="submit" name="submit" value="提 交" id="tijiao" class="form-control" style='width:100%;height:80' />
+                </li>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer2"> <a href="javascript:void(0)" id="flip"> <img src="/templets/default/images/map-up.png"> </a> </div>
+</footer>
+<!-- Include all compiled plugins (below), or include individual files
+  as needed --> 
+
+</body>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+    
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(118.800879,32.083705);//定义一个中心点坐标
+        map.centerAndZoom(point,14);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+    
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+    
+    //地图控件添加函数：
+    function addMapControl(){
+                        }
+    
+    //标注点数组
+    var markerArr = [{title:"南京市某某科技有限公司",content:"江苏省南京市玄武区玄武湖",point:"118.800879|32.083705",isOpen:1,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+		 ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+			var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+			var iw = createInfoWindow(i);
+			var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+			marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                        borderColor:"#808080",
+                        color:"#333",
+                        cursor:"pointer"
+            });
+			
+			(function(){
+				var index = i;
+				var _iw = createInfoWindow(i);
+				var _marker = marker;
+				_marker.addEventListener("click",function(){
+				    this.openInfoWindow(_iw);
+			    });
+			    _iw.addEventListener("open",function(){
+				    _marker.getLabel().hide();
+			    })
+			    _iw.addEventListener("close",function(){
+				    _marker.getLabel().show();
+			    })
+				label.addEventListener("click",function(){
+				    _marker.openInfoWindow(_iw);
+			    })
+				if(!!json.isOpen){
+					label.hide();
+					_marker.openInfoWindow(_iw);
+				}
+			})()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+    
+    initMap();//创建和初始化地图
+</script>
+</html>

@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+      data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only"> Toggle navigation </span> <span class="icon-bar"> </span> <span class="icon-bar"> </span> <span class="icon-bar"> </span> </button>
+    <a class="navbar-brand visible-lg visible-sm visible-md" href="{dede:global.cfg_basehost/}"> <img alt="" src="{dede:global.cfg_templets_skin/}/images/logo.png"> </a> <a class="navbar-brand visible-xs" href="/"> <img alt="" src="{dede:global.cfg_templets_skin/}/images/logo.png"> </a> </div>
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav navbar-right">
+      <li {dede:field name=typeid runphp="yes"}(@me=="")? @me=" class='active' ":@me="";{/dede:field}> <a href="/"> 网站首页 </a> </li>
+      {dede:channelartlist typeid='top' currentstyle='active'}
+      <li class='{dede:field.currentstyle/}'> <a href="{dede:field name='typeurl'/}"> {dede:field name='typename'/} </a> </li>
+      {/dede:channelartlist}
+    </ul>
+  </div>
+  <!-- /.navbar-collapse --> 
+</div>
